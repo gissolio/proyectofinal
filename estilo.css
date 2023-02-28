@@ -1,0 +1,57 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {    /*Grid*/
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header'
+    'menu menu main main main main'
+    'footer footer footer footer footer footer';
+  gap: 5px;
+  background-color: #F8F9F9;
+  padding: 20px;
+}
+.nombre{
+  font-family: 'Climate Crisis', cursive;
+}
+.detalle{   
+  font-size: 20px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  color: #34495E; 
+}
+.circulo { 
+  width: 150px;
+  border-radius: 50%;
+}
+.grid-container > .item1 {/*cabecera*/
+  background-color: #EEEEEE;
+  text-align: center;
+  padding: 10px 0;
+}
+.grid-container > .item2 {/*izquierda*/
+    background-color: #BDBDBD;
+    text-justify: auto;
+    text-align: justify;
+    color: white;
+    padding: 10px 0;
+    font-size: 12px;
+}
+.grid-container > .item3 {/*derecha*/
+    background-color: #B3E5FC;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 15px;
+}
+.grid-container > .item4 {/*footer*/
+  font-family: 'Climate Crisis', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Zeyada', cursive;
+    background-color: #5D6D7E;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    font-size: 15px;
+}
